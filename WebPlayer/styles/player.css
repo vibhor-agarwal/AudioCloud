@@ -1,0 +1,333 @@
+﻿/***************** Page - Start ***********************/
+
+body
+{
+    margin: 10px 5px;
+}
+
+.main-content, header, footer
+{
+    background-color: #EEE;
+}
+
+header
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+body
+{
+    background-image: url("../images/bg.jpg");
+    background-position: 0;
+    background-size: cover;
+    opacity: 0.9;
+}
+
+header .content
+{
+    display: table;
+    width: 100%;
+}
+
+header .content h3
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+header .image
+{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0;
+    float: right;
+}
+
+header .logo
+{
+    background-image: url("../images/audioCloud.gif");
+    height: 65px;
+    width: 100px;
+}
+
+header .location
+{
+    background-image: url("../images/location.png");
+    height: 65px;
+    width: 50px;
+    background-position: center center;
+    background-size: 30px;
+    cursor: pointer;
+}
+
+header
+{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+footer
+{
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+/***************** Page - End ***********************/
+
+
+/***************** Player - Start ***********************/
+
+.player
+{
+    background-color: #A2A2A2;
+    padding: 5px 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.info-container
+{
+    display: table;
+    width: 100%;
+}
+
+.audio-container audio
+{
+    width: 100%;
+}
+
+.album-art
+{
+    display: table-cell;
+    height: 100px;
+    width: 100px;
+}
+
+.album-art img
+{
+    height: 100%;
+}
+
+html > /**/ body .album-art image
+{
+    height: 100px;
+    width: 100px;
+}
+
+.track-details
+{
+    display: table-cell;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+/***************** Player - End ***********************/
+
+
+/***************** Playlist - Start ***********************/
+
+.playlist
+{
+    border: 5px solid #A2A2A2;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: relative;
+}
+
+input[type='file']
+{
+    display: none;
+    visibility: collapse;
+}
+
+.playlist .head
+{
+    padding: 5px;
+    background-color: #BBBBBB;
+}
+
+.playlist .head a
+{
+    float: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    margin: 0px 2px;
+    cursor: not-allowed;
+}
+
+.playlist .head a.icon-deleteAll
+{
+    background-image: url("../images/deleteAll.png");
+    cursor: pointer;
+}
+
+.playlist .head a.icon-playAll
+{
+    background-image: url("../images/playAll.png");
+}
+
+.playlist .head a.icon-history
+{
+    background-image: url("../images/history.png");
+    cursor: pointer;
+}
+
+.playlist .history
+{
+    position: absolute;
+    background-color: #FDFDFD;
+    height: 150px;
+    width: 100%;
+    overflow: auto;
+    display: none;
+    list-style: none;
+    border-top: 2px solid #CCC8C8;
+    border-bottom: 2px solid #CCC8C8;
+}
+
+.playlist .history li
+{
+    padding: 2px 10px;
+}
+
+.playlist .list
+{
+    padding: 5px 5px;
+    background-color: #e3e3e3;
+    min-height: 200px;
+    max-height: 270px;
+    overflow: auto;
+}
+
+.playlist .list li
+{
+    padding: 5px;
+    border-bottom: 1px dotted black;
+}
+
+.playlist .list li:hover
+{
+    background-color: #A3A3A3;
+    background-image: url("../images/play.png");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    cursor: pointer;
+}
+
+.playlist .list li a
+{
+    float: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+}
+
+.playlist .list li:hover a
+{
+    background-image: url("../images/delete.png");
+}
+
+.drop-site .outer
+{
+    display: table;
+    height: 150px;
+    width: 100%;
+}
+
+.drop-site .inner
+{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 22px;
+    background-image: url("../images/dropBox.png");
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+/***************** Playlist - End ***********************/
+
+
+
+/***************** Overlays - Start ***********************/
+
+.overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(170, 170, 170, 0.53);
+    display: none;
+    background-image: url("../images/loader.gif");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 50px;
+}
+
+.map-overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(170, 170, 170, 0.53);
+    display: none;
+}
+
+.map-overlay .close
+{
+    height: 50px;
+    width: 50px;
+    background-image: url("../images/close.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    margin: 25px;
+    align-self: center;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#map-canvas
+{
+    height: 75%;
+    width: 90%;
+    display: flex;
+    margin: auto;
+    max-width: 800px;
+    max-height: 500px;
+    border: 10px solid #F8F8F8;
+}
+
+/***************** Overlays - End ***********************/
+
+
+
+/***************** Media Queries - Sart ***********************/
+
+@media (max-width: 360px) and (min-width: 311px)
+{
+    .track-details
+    {
+        padding: 10px 2px;
+    }
+}
+
+
+@media (max-width: 310px) and (min-width: 100px)
+{
+    .track-details
+    {
+        padding: 10px 12px;
+    }
+}
+
+/***************** Media Queries - End ***********************/

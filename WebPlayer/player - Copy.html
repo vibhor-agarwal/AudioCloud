@@ -1,0 +1,91 @@
+﻿<!DOCTYPE HTML>
+<html <!--manifest="audioCloud.appcache"-->>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AudioCloud</title>
+    <link rel="stylesheet" href="styles/reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="styles/style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="styles/playerPre.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="lib/jquery-2.1.0-vsdoc.js"></script>
+    <script type="text/javascript" src="lib/jquery-2.1.0.js"></script>
+    <script type="text/javascript" src="scripts/player.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script>
+    </script>
+</head>
+<body>
+    <header>
+        <div class="content">
+            <h3>AudioCloud</h3>
+            <div class="image logo" title="AudioCloud">
+            </div>
+            <div class="image location" title="Locate me">
+            </div>
+        </div>
+    </header>
+    <div class="main-content">
+        <div class="player">
+            <div class="info-container">
+                <div class="album-art col-6">
+                    <img src="images/alumArtDefault2.png" alt="Album Art" />
+                </div>
+                <div class="track-details col-6">
+                    <div>
+                        <label class="name">
+                            horse.mp3
+                        </label>
+                    </div>
+                    <div>
+                        <label class="type">
+                            audio/mp3
+                        </label>
+                    </div>
+                    <div>
+                        <label class="size">
+                            28915 bytes
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="audio-container">
+                <audio controls autoplay>
+                    <source src="audio/horse.mp3" />
+                    <source src="audio/horse.ogg" />
+                    <p>Unsupported browser!!</p>
+                </audio>
+            </div>
+        </div>
+        <div class="playlist"> <!--<div class="playlist" ondrop="drop(event);" ondragover="allowDrop(event)">-->
+            <div class="head">
+                Playlist
+                <a class="icon-deleteAll" title="Delete All"></a>
+                <a class="icon-playAll" title="Play All" ></a>
+                <a class="icon-history" title="History"></a>
+            </div>
+            <ul class="history">
+            </ul>
+            <ul class="list drop-site">
+                <div class="outer">
+                    <div class="inner">
+                        Drop files here
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>
+            Vibhor Agarwal (2431) <a href="mailto:vibhor.agarwal@nagarro.com">(vibhor.agarwal@nagarro.com)</a>
+            , Nagarro
+        </p>
+    </footer>
+    <div class="overlay">
+    </div>
+    <div class="map-overlay">
+        <a class="close" title="Close"></a>
+        <div id="map-canvas">
+        </div>
+    </div>
+</body>
+</html>

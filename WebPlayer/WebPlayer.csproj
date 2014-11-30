@@ -57,12 +57,43 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="audio\Baarish.mp3" />
+    <Content Include="audio\horse.mp3" />
+    <Content Include="images\alumArtDefault.png" />
+    <Content Include="images\alumArtDefault2.png" />
+    <Content Include="images\audioCloud.gif" />
+    <Content Include="images\audioFile.png" />
+    <Content Include="images\bg.jpg" />
+    <Content Include="images\close.png" />
+    <Content Include="images\delete.png" />
+    <Content Include="images\deleteAll.png" />
+    <Content Include="images\dropBox.png" />
+    <Content Include="images\history.png" />
+    <Content Include="images\loader.gif" />
+    <Content Include="images\location.png" />
+    <Content Include="images\play.png" />
+    <Content Include="images\playAll.png" />
+    <Content Include="player - Copy.html" />
+    <Content Include="player.html" />
+    <Content Include="scripts\player.js" />
+    <Content Include="scripts\playerO_bak.js" />
+    <Content Include="scripts\playerO_bak2.js" />
+    <Content Include="scripts\playerO_bak3.js" />
+    <Content Include="scripts\playerO_bak4.js" />
+    <Content Include="scripts\playerO_bak5.js" />
+    <Content Include="scripts\playerO_bak6.js" />
+    <Content Include="styles\player.css" />
+    <Content Include="styles\playerPre.css" />
+    <Content Include="styles\reset.css" />
+    <Content Include="styles\style.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="audio\horse.ogg" />
+    <Content Include="audioCloud.appcache" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

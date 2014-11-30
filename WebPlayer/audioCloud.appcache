@@ -1,0 +1,35 @@
+﻿CACHE MANIFEST
+# 2014-03-31 v1.0.0
+
+CACHE:
+audio/horse.mp3
+audio/horse.ogg
+
+images/alumArtDefault.png
+images/audioCloud.gif
+images/audioFile.png
+images/bg.jpg
+images/close.png
+images/delete.png
+images/deleteAll.png
+images/dropBox.png
+images/history.png
+images/loader.gif
+images/location.png
+images/play.png
+images/playAll.png
+
+lib/jquery-2.1.0-vsdoc.js
+lib/jquery-2.1.0.js
+lib/jquery-2.1.0.min.map
+
+scripts/player.js
+
+styles/playerPre.css
+styles/reset.css
+styles/style.css
+
+player.html
+
+NETWORK:
+*
