@@ -73,6 +73,8 @@
     <Content Include="images\location.png" />
     <Content Include="images\play.png" />
     <Content Include="images\playAll.png" />
+    <None Include="lib\jquery-2.1.0-vsdoc.js" />
+    <Content Include="lib\jquery-2.1.0.js" />
     <Content Include="player - Copy.html" />
     <Content Include="player.html" />
     <Content Include="scripts\player.js" />
@@ -94,12 +96,7 @@
   <ItemGroup>
     <Content Include="audio\horse.ogg" />
     <Content Include="audioCloud.appcache" />
-    <None Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
+    <Content Include="lib\jquery-2.1.0.min.map" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
