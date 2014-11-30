@@ -260,24 +260,3 @@ $(function () {
 
 $(function () {
 });
-
-function Sample(options) {
-    this.a = "a";
-    this.f = function () {
-        console.log("f");
-    }
-}
-
-var Tample = {
-    a: "a",
-    f: function () {
-        console.log("f");
-    }
-};
-
-
-(function (ctx) {
-    return function (e) {
-
-    };
-})(this);
